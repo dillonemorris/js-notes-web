@@ -7,7 +7,7 @@ import { Favorites } from '../components/icons/Favorites'
 
 const Nav = styled.nav`
   padding: 1em;
-  background: ${props => props.theme.colors.gray100};
+  background: ${props => props.theme.colors.white};
 
   @media (max-width: 700px) {
     padding-top: 64px;

@@ -20,7 +20,8 @@ const Main = styled.main`
   position: fixed;
   height: calc(100% - 185px);
   width: 100%;
-  padding: 1em;
+  padding: 4rem 1rem;
+  background-color: ${({ theme }) => theme.colors.gray100};
   overflow-y: scroll;
 
   @media (min-width: 700px) {

@@ -8,7 +8,7 @@ export const Favorites = () => {
       viewBox="0 0 50 50"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g fill-rule="nonzero" fill="none">
+      <g fillRule="nonzero" fill="none">
         <path
           d="M25 17.08H12.5a1.562 1.562 0 100 3.124H25a1.563 1.563 0 000-3.125zM26.563 25.933c0-.863-.7-1.562-1.563-1.562H12.5a1.562 1.562 0 000 3.125H25c.863 0 1.563-.7 1.563-1.563z"
           fill="#4A5568"

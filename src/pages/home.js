@@ -1,13 +1,8 @@
 import React from 'react'
-import Button from '../components/Button'
+import NoteFeed from '../components/NoteFeed'
 
 const Home = () => {
-  return (
-    <div>
-      <p>This is the home page</p>
-      <Button>hey</Button>
-    </div>
-  )
+  return <NoteFeed />
 }
 
 export default Home
