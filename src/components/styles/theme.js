@@ -28,6 +28,9 @@ export const theme = {
     secondary700: '#4C51BF',
     secondary800: '#434190',
     secondary900: '#3C366B',
+    red200: '#FED7D7',
+    red600: '#E53E3E',
+    red800: '#9B2C2C',
   },
   shadow: {
     sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',

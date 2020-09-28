@@ -21,18 +21,25 @@ export default createGlobalStyle`
     line-height: 1.4;
   }
 
+  a,
   a:link,
   a:visited {
-    color: #0077cc;
-  }
-
-  a:hover,
-  a:focus {
-    color: #004499;
+    text-decoration: none;
+    color: #1A202C;
   }
 
   code,
   pre {
     max-width: 100%;
   }
+
+  button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 `

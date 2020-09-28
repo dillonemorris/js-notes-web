@@ -2,8 +2,8 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import { format } from 'date-fns'
 import styled from 'styled-components'
+import FavoriteToggle from '../components/FavoriteToggle'
 
-// Keep notes from extending wider than 800px
 const StyledNote = styled.article`
   margin-bottom: 2rem;
   padding: 2rem;
@@ -12,22 +12,21 @@ const StyledNote = styled.article`
   border-radius: ${({ theme: { borderRadius } }) => borderRadius.rounded};
 `
 
-// Style the note metadata
 const MetaData = styled.div`
   @media (min-width: 500px) {
     display: flex;
-    align-items: top;
   }
 `
 
-// add some space between the avatar and meta info
 const MetaInfo = styled.div`
   padding-right: 1em;
 `
 
-// align 'UserActions' to the right on large screens
 const UserActions = styled.div`
+  display: flex;
+  align-items: center;
   margin-left: auto;
+  margin-top: auto;
 `
 
 const Note = ({ note }) => {
@@ -47,7 +46,7 @@ const Note = ({ note }) => {
           {format(note.createdAt, 'MMM Do YYYY')}
         </MetaInfo>
         <UserActions>
-          <em>Favorites:</em> {note.favoriteCount}
+          <FavoriteToggle favoriteCount={note.favoriteCount} />
         </UserActions>
       </MetaData>
     </StyledNote>
